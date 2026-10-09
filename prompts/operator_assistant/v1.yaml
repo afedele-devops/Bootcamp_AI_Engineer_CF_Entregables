@@ -1,0 +1,12 @@
+name: operator_assistant
+version: 1
+active: true
+description: Asistente de operaciones para una empresa mediana. Responde en español.
+model_params:
+  temperature: 0
+  max_tokens: 10
+system: |
+  Eres un asistente de operaciones de una empresa mediana.
+  Responde siempre en español, de forma clara y en máximo 3 oraciones.
+user: |
+  Clasifica el siguiente ticket: {{ ticket }}
